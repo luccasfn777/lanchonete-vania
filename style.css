@@ -1,0 +1,273 @@
+:root {
+  --main-color: #e2df28;
+  --black: #131313;
+  --bg: #010101;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+}
+
+.logo img {
+  width: 80px; /* diminui aqui até ficar do jeito que você quer */
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  font-size: 16px; /* fonte base maior */
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem; /* tamanho aumentado */
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.icons img {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  width: 60px;
+  height: 60px;
+}
+
+.home-conteiner {
+  background: url(./imagens/fundohome.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.home-conteiner section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.conter {
+  max-width: 100rem;
+  padding: 20px;
+}
+
+.conter h3 {
+  color: #fff;
+  font-size: 2rem; /* maior */
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.conter p {
+  color: #fff;
+  font-size: 1rem; /* maior */
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.cardapio-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.cardapio-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.cardapio-menu li {
+  font-weight: 900;
+  font-size: 1.8rem; /* tamanho aumentado */
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  user-select: none;
+}
+
+.cardapio-menu li.ativo,
+.cardapio-menu li:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.3rem;
+}
+
+.cardapio-itens article {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 1rem;
+}
+
+.cardapio-itens h4 {
+  font-weight: 900;
+  font-size: 1.4rem; /* maior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardapio-itens h4 span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+
+.cardapio-itens p {
+  font-weight: 300;
+  font-size: 1rem; /* maior */
+  margin-top: 0.3rem;
+}
+
+.conteudo-cardapio {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.conteudo-cardapio.ativo {
+  display: block;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.cardapio-itens {
+  position: relative;
+  min-height: 300px;
+}
+
+/* Seção contato */
+.contato-secao {
+  max-width: 1100px;
+  margin: 4rem auto 6rem auto;
+  padding: 3rem 4rem 3rem 4rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contato-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contato-texto {
+  flex: 1 1 380px;
+  max-width: 450px;
+}
+
+.contato-texto h2 {
+  font-size: 2.4rem; /* maior */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.contato-texto p {
+  margin-bottom: 2rem;
+  color: #ccc;
+  font-size: 1.2rem; /* maior */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  font-size: 1.2rem; /* maior */
+  color: white;
+}
+
+.info-item .icon {
+  font-size: 1.8rem; /* maior */
+  margin-right: 15px;
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  user-select: none;
+  color: white;
+}
+
+.contato-mapa {
+  flex: 1 1 300px;
+  min-width: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.contato-mapa iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 8px;
+}
