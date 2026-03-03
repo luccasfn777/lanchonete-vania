@@ -272,22 +272,10 @@ header section {
   border: none;
   border-radius: 8px;
 }
-/* ===== MENU MOBILE ===== */
 @media (max-width: 768px) {
 
-  header section {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .navbar {
-    display: flex;
-    gap: 15px;              /* espaço entre eles */
-  }
-
-  .navbar a {
-    font-size: 1.4rem;      /* diminui no celular */
-    margin: 0;
+  .logo img {
+    width: 60px;
   }
 
 }
