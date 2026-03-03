@@ -271,3 +271,17 @@ header section {
   border: none;
   border-radius: 8px;
 }
+/* ===== RESPONSIVO MOBILE ===== */
+@media (max-width: 768px) {
+
+  .cardapio-menu ul {
+    flex-wrap: wrap;          /* permite quebrar linha */
+    justify-content: center;  /* centraliza */
+    gap: 15px;                /* espaço entre eles */
+  }
+
+  .cardapio-menu li {
+    font-size: 1.4rem;        /* diminui um pouco a fonte */
+  }
+
+}
