@@ -126,12 +126,13 @@ header section {
   margin-bottom: 2rem;
 }
 
-.cardapio-menu li {
-  font-weight: 900;
-  font-size: 1.8rem; /* tamanho aumentado */
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.5);
-  user-select: none;
+.cardapio-menu ul {
+  display: flex;
+  flex-wrap: wrap;      /* permite quebrar linha */
+  justify-content: center;
+  gap: 20px;            /* espaço real entre os itens */
+  list-style: none;
+  margin-bottom: 2rem;
 }
 
 .cardapio-menu li.ativo,
@@ -270,19 +271,4 @@ header section {
   height: 320px;
   border: none;
   border-radius: 8px;
-}
-@media (max-width: 768px) {
-
-  .cardapio-menu ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .cardapio-menu li {
-    background: #1a1a1a;
-    padding: 6px 12px;
-    border-radius: 5px;
-  }
-
 }
