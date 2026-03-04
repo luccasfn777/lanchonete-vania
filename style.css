@@ -271,6 +271,7 @@ header section {
   height: 320px;
   border: none;
   border-radius: 8px;
+
 }
 @media (max-width: 768px) {
 
@@ -278,4 +279,8 @@ header section {
     width: 60px;
   }
 
+}
+
+p 
+{font-size: 20px
 }
